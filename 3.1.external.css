@@ -1,0 +1,12 @@
+h1{
+    color: yellowgreen;
+    text-align: center;
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    color: orangered;
+    text-align: left;
+    font-size: 18px;
+}
