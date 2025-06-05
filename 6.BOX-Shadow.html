@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX Shadow</title>
+    
+    <style>
+        h1{
+            color: red;
+            text-align: center;
+        }
+
+        div{
+            width: 400px;
+            height: 200px;
+            background-color: lightgray;
+            padding: 20px;
+            border: 1px solid lightcoral;
+            margin: 50px;
+
+            /*Use Box-shadow*/
+            /*Simple shadow(outside shadow) and it appears right down blur color */
+            box-shadow: 5px 5px 10px red;
+        }
+
+        #left-up{
+            width: 350px;
+            height: 150px;
+            background-color: lightgray;
+            padding: 20px;
+            border: 1px solid lightcoral;
+            margin: 50px;
+
+            
+            /*Simple shadow(outside shadow) and it appears left up blur color */
+            box-shadow: -5px -5px 10px red;
+        }
+
+        #both-side{
+            width: 300px;
+            height: 150px;
+            background-color: lightgray;
+            padding: 20px;
+            border: 1px solid lightcoral;
+            margin: 50px;
+
+            
+            /*Simple shadow(outside shadow) and it appears both side blur color */
+            box-shadow: 5px 5px 15px red, -5px -5px 15px red;
+            /*box-shadow: 3px 3px 10px rgba(0, 0, 0, 1) inset, -3px -3px 15px rgba(0, 0,0, 1.5) inset ;*/
+        }
+
+        #inner-box{
+            width: 300px;
+            height: 150px;
+            background-color: lightgray;
+            padding: 20px;
+            border: 1px solid lightcoral;
+            margin: 50px;
+
+            
+            /*inner shadow and same work left down right up */
+           /*box-shadow: 3px 3px 10px red inset, -3px -3px 10px red inset ;*/
+           /* use rgba(0,0,0,0.5)*/
+           box-shadow: 3px 3px 10px rgba(0, 0, 0, 1) inset, -3px -3px 15px rgba(0, 0,0, 1.5) inset ; 
+        }
+
+        #spread{
+            width: 400px;
+            height: 150px;
+            background-color: lightgray;
+            padding: 20px;
+            border: 1px solid lightcoral;
+            margin: 50px;
+
+            
+           /*with spread*/ 
+           /*box-shadow: 3px 3px 10px 2px red ;*/
+           /* use rgba(0,0,0,0.5)*/
+           box-shadow: 3px 3px 5px 20px rgba(0, 0,0, 0.5);
+        }
+
+    </style>
+<body>
+    <h1>BOX Shadow</h1>
+    <div>
+        Outside shadow right and down
+    </div>    
+    <div id="left-up">
+        Outside shadow left and up
+    </div>
+    <div id="both-side">
+        Both outside Shadow left down right up
+    </div>
+
+    <div id="inner-box">
+        Inner Shadow look
+    </div>
+
+    <div id="spread">
+        with spread.
+    </div>
+</body>
+</html>
