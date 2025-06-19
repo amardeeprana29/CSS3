@@ -1,0 +1,21 @@
+/*  Step 1 : go to https://fonts.google.com
+    search and select a font (e.g. Roboto)
+    choose and copy <link> tag or @import
+*/
+
+/* Step 2: Paste the link in your HTML <head> Section 
+    or paste the @ import in your css
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Step 3: Use the font in CSS
+*/
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+        text-align: center;
+}
+
+
+/* you also learn "custom fonts" from ChatGPT */
