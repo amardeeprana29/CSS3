@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: antiquewhite;
+    color:#ffffff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3); 
+    background-color:darkgrey;
+    position: fixed;
+    left: 0;
+    top: 0.5;
+    z-index: 1;
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none; /*auto remove points, numbers*/
+}
+
+nav ul li a{ /*Tropography use*/
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 40px;
+    line-height: 43px;
+    margin: 5px; /* here you cant use "word-spacing" use margin*/
+    padding: 5px 15px;
+    border: 2px solid black;
+    text-transform: uppercase;
+    color:black;
+    font-weight: 500; 
+    text-decoration: none; /*remove under line*/
+    letter-spacing: 1px;
+    display: flex;  /*1-D view*/
+}
+/* Background image */
+#background-edit{
+    padding-top: 100px;
+    height: 664px;
+    width: 830px;
+    background-image: url(image/1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed ;
+}
+
+p{
+    font-size: large;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-align: left;
+    text-indent: 50px;
+}
