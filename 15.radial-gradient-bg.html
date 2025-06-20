@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial Gradient</title>
+    <style>
+        .circle{
+            width: 300px;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: red;
+            /*Radial gradient(); : radiate from the center
+            Shape : circle, ellipse
+            Size : closest-side, farthest-side, closest-corner, farthest-corener
+            postion : center, left top, right bottom, 50% 50%, 
+            */
+
+            background: radial-gradient(circle farthest-side at 40% 60%, violet, yellow, blue);
+        }
+
+        .ellipse{
+            width: 300px;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            background-color: red;
+            background: radial-gradient(ellipse closest-side at center,orange,white, green,black);
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="ellipse"></div>
+</body>
+</html>
