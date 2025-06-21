@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Background</title>
+    <style>
+        body{
+            height: 400px;
+            width: 100%;
+            background-image: url('Image/2.jpg');
+            background-position: center center;
+        }
+
+        .example1{
+            background-color: black;
+            color: white;
+            width: 300px;
+            height: 100px;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 100px;
+            text-align: center;
+            box-sizing: border-box;
+
+            /*Transperent Background*/
+            /*Set transparency for entire elements*/
+            opacity: 0.6;
+        }
+
+        .example2{
+            background-color: black;
+            color: white;
+            width: 300px;
+            height: 100px;
+            margin-top: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 100px;
+            text-align: center;
+            box-sizing: border-box;
+
+            /*Transperent Background*/
+            /* Fully removed background */
+            background-color: transparent; 
+        }
+
+        .example3{
+            background-color: black;
+            color: white;
+            width: 300px;
+            height: 100px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 100px;
+            text-align: center;
+            box-sizing: border-box;
+
+            /*Transperent Background*/
+            /* partial tranparency (only background) */
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+
+        .example4{
+            background-color: black;
+            color: white;
+            width: 300px;
+            height: 100px;
+            margin-top: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 100px;
+            text-align: center;
+            box-sizing: border-box;
+
+            /*Transperent Background*/
+            /* create smooth transparent overlays */
+            background: linear-gradient(rgba(0, 0, 0, 0.8 ), rgba(0, 0, 0, 0)); 
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <section class="example1">
+            I am a Transparent 1
+        </section>
+        <section class="example2">
+            I am a Transparent 2
+        </section>
+        <section class="example3">
+            I am a Transparent 3
+        </section>
+        <section class="example4">
+            I am a Transparent 4
+        </section>
+    </div>
+</body>
+</html>
