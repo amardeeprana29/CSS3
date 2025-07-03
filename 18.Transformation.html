@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transformation</title>
+    <style>
+        #box-1{
+            width: 200px;
+            height: 200px;
+            margin: 40px 40px;
+            background-color: red;
+            transform: translate(40px, 20px); /* move element*/
+        }
+        #box-2{
+            width: 200px;
+            height: 200px;
+            margin: 70px 40px;
+            background-color:blue;
+            transform: rotate(35deg); /*rotate element*/
+        }
+        #box-3{
+            width: 200px;
+            height: 200px;
+            margin: 40px 40px;
+            background-color: green;
+            transform: scale(0.5,1.0); /*increase/ decrease size */
+        }
+        #box-4{
+            width: 200px;
+            height: 200px;
+            margin: 40px 40px;
+            background-color: black;
+            transform: skew(20deg, 30deg); /*slant element*/
+        }
+        #box-5{
+            width: 200px;
+            height: 200px;
+            margin: 70px 40px;
+            background-color: orange;
+            transform: translate(70px,50px) scale(1.2,1) rotate(80deg) skew(50deg, 30deg); /*also work wih combine*/
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box-1"></div>
+    <div id="box-2"></div>
+    <div id="box-3"></div>
+    <div id="box-4"></div>
+    <div id="box-5"></div>
+</body>
+</html>
