@@ -5,13 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Animation</title>
     <style>
-        .class{
+        .star{
             width: 200px;
+            /*
+            animation-name: spinandMovestar;
+            animation-duration: 2s;
+            animation-direction:alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            animation-fill-mode: backwards;*/
+            /*animation-delay: 5s;*/
+            /* also in shorthand */
+            animation: spinandMovestar 2s ease-in-out infinite alternate;
         }
 
+        @keyframes spinandMovestar {
+            50%{
+                transform: translateX(100%) rotate(360deg) scale(0.5);
+            }
+            100%{
+                transform: translateX(300%);
+            }
+        }
     </style>
 </head>
 <body>
+    <img src="Image/star.jpg" alt="" class="star">
+    <img src="Image/star.jpg" alt="" class="star">
+    <img src="Image/star.jpg" alt="" class="star"><br>
+    <img src="Image/star.jpg" alt="" class="star">
+    <img src="Image/star.jpg" alt="" class="star">
+    <img src="Image/star.jpg" alt="" class="star"><br>
+    <img src="Image/star.jpg" alt="" class="star">
+    <img src="Image/star.jpg" alt="" class="star">
     <img src="Image/star.jpg" alt="" class="star">
 </body>
 </html>
