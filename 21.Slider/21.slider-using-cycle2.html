@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+
+    <!-- jQuery -->
+    <script src="jquery.min.js"></script>
+
+    <!-- cycle2 plugin -->
+    <script src="cycle2.min.js"></script>
+    <style>
+        div img{
+            width: 600px;
+            height: auto;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Step 1: search on google cycle2.js (https://jquery.malsup.com/cycle2/).
+        step 2 : Go to Download (Latest Release -> Download Cycle2 Production Version (19kb) and  save whare you want to save the file).
+        step 3 : Search on google jquery (https://jquery.com/), then go to DownloadjQuary and download it and  save in same folder.
+        Step 4 : now in HTML Link required files: in head add jQuery & cycle2 files
+        step 5 : now in body( go cycle2.js then demo and choose one of them like captions, prev/next, then copy attributes and paste in div) .
+        step 6 : do CSS styling
+        -->
+
+
+        <!-- slideshow -->
+        <!-- to use an image's alt attribute for the caption.
+                data-cycle-caption="#alt-caption"
+                data-cycle-caption-template="{{alt}}" 
+                and <div id="alt-caption" class="center"></div> -->
+    <div  class="cycle-slideshow"
+        data-cycle-fx=scrollHorz
+        data-cycle-timeout=2000
+        data-cycle-caption="#alt-caption"
+        data-cycle-caption-template="{{alt}}"
+        data-cycle-prev="#prev"
+        data-cycle-next="#next">
+
+        <img src="1.jpg" alt="image1">
+        <img src="2.jpg" alt="image2">
+        <img src="star.jpg" alt="image3">
+    </div>
+    
+    <!-- empty element for caption -->
+    <div id="alt-caption" class="center"></div>
+
+    <!-- prev/next links -->
+        <div class=center>
+            <span id=prev>&lt;&lt;Prev </span>
+            <span id=next> Next&gt;&gt;</span>
+        </div>
+</body>
+</html>
