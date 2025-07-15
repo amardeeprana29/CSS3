@@ -4,35 +4,36 @@
   <meta charset="utf-8">
   <title>Lightbox Example</title>
   <link rel="stylesheet" href="dist/css/lightbox.min.css">
+  <!--   (Lightbox CSS) 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+          (Lightbox JS) 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  -->
+  <style type="text/css">
+    img{
+        width: 800px;
+    }
+  </style>
 </head>
 <body>
-
-  <section>
-    <h3>Two Individual Images</h3>
+  <section>  
+    <h3>Image Set</h3>
     <div>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-1"><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" /></a>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-2.jpg" data-lightbox="example-2" data-title="Optional caption."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-2.jpg" alt="image-1"/></a>
-    </div>
-
-    <hr />
-
-    <h3>A Four Image Set</h3>
-    <div>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" alt=""/></a>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" alt="" /></a>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" alt="" /></a>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" ></a>
+      <a class="example-image" href="../image/1.jpg" data-lightbox="example-set" data-title="I am a Title ">
+        <img class="example-image" src="../image/1.jpg" alt=""/>
+      </a>
+      <a class="example-image" href="../image/2.jpg" data-lightbox="example-set" data-title=" ">
+        <img class="example-image" src="../image/2.jpg" alt=""/>
+      </a>
+      <a class="example-image" href="../image/star.jpg" data-lightbox="example-set" data-title=" ">
+        <img class="example-image" src="../image/star.jpg" alt=""/>
+      </a>      
     </div>
   </section>
-
-
+  
   <script src="dist/js/lightbox-plus-jquery.min.js"></script>
 
   <!-- <script src="../bower_components/jquery/dist/jquery.js"></script>
-  <script src="../src/js/lightbox.js"></script> -->
-  
-
-  
-
+        <script src="../src/js/lightbox.js"></script> -->
 </body>
 </html>
